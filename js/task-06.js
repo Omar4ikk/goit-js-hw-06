@@ -1,12 +1,13 @@
 ////TODO
 let validInput = document.querySelector('#validation-input');
-let dataLength = parseInt(validInput.getAttribute('data-length'));
 
 
 
 
 validInput.addEventListener("blur", () => {
+    let dataLength = validInput.getAttribute('data-length');
     let textLength = validInput.value.length;
+    
     if(dataLength === textLength) {
         validInput.classList.remove('invalid'); 
         validInput.classList.add('valid');
@@ -18,4 +19,4 @@ validInput.addEventListener("blur", () => {
     console.log(dataLength);
     
 }
-})
+});
