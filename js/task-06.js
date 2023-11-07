@@ -1,6 +1,7 @@
 ////TODO
 let validInput = document.querySelector('#validation-input');
-let dataLength = validInput.getAttribute('data-length');
+let dataLength = parseInt(validInput.getAttribute('data-length'));
+
 
 
 
