@@ -5,7 +5,7 @@ let validInput = document.querySelector('#validation-input');
 
 
 validInput.addEventListener("blur", () => {
-    let dataLength = validInput.getAttribute('data-length');
+    let dataLength = parseInt(validInput.getAttribute('data-length'));
     let textLength = validInput.value.length;
     
     if(dataLength === textLength) {
